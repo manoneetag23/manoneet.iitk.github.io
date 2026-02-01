@@ -85,3 +85,67 @@ body {
   border-radius: 20px;
   margin: 0.3rem;
 }
+
+.achievement-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.achievement-list li {
+  margin-bottom: 0.6rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.achievement-list li::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  color: #6366f1;
+}
+
+.timeline {
+  border-left: 3px solid #6366f1;
+  padding-left: 2rem;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -2.2rem;
+  top: 0.4rem;
+  width: 12px;
+  height: 12px;
+  background: #6366f1;
+  border-radius: 50%;
+}
+
+.time {
+  font-size: 0.85rem;
+  color: gray;
+}
+
+body.dark-mode {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+body.dark-mode .card,
+body.dark-mode .project-card {
+  background: #1e293b;
+  color: white;
+}
+
+#darkToggle {
+  margin-left: 1rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+}
+
